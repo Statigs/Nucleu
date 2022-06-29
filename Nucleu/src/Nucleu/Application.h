@@ -7,6 +7,9 @@ namespace Nucleu {
 	class NUCLEU_API Application
 	{
 	public:
+		Application();
+		virtual ~Application();
+
 		void Run();
 	};
 

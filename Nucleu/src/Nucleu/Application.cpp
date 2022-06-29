@@ -2,6 +2,13 @@
 
 namespace Nucleu {
 
+	Application::Application(){
+
+	};
+
+	Application::~Application() {
+
+	};
 
 	void Application::Run()
 	{
