@@ -4,10 +4,13 @@
     <Filter Include="Nucleu">
       <UniqueIdentifier>{31BB4EC6-1D5D-799C-0618-8DF0F25800ED}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Nucleu\Events">
+      <UniqueIdentifier>{F5C51DFD-6186-9933-2AC1-E2B09640DE0F}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Nucleu.h" />
-    <ClInclude Include="src\Nucleu\APPLICATION.H">
+    <ClInclude Include="src\Nucleu\Application.h">
       <Filter>Nucleu</Filter>
     </ClInclude>
     <ClInclude Include="src\Nucleu\Core.h">
@@ -16,13 +19,21 @@
     <ClInclude Include="src\Nucleu\EntryPoint.h">
       <Filter>Nucleu</Filter>
     </ClInclude>
+    <ClInclude Include="src\Nucleu\Events\ApplicationEvent.h">
+      <Filter>Nucleu\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nucleu\Events\Event.h">
+      <Filter>Nucleu\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nucleu\Events\KeyEvent.h">
+      <Filter>Nucleu\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nucleu\Events\MouseEvent.h">
+      <Filter>Nucleu\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Nucleu\Log.h">
       <Filter>Nucleu</Filter>
     </ClInclude>
-    <ClInclude Include="src\Nucleu\Events\Event.h" />
-    <ClInclude Include="src\Nucleu\Events\ApplicationEvent.h" />
-    <ClInclude Include="src\Nucleu\Events\KeyEvent.h" />
-    <ClInclude Include="src\Nucleu\Events\MouseEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Nucleu\Application.cpp">
