@@ -2,7 +2,6 @@
 
 #include "Nucleu/Core.h"
 
-#include <string>
 #include <functional>
 
 namespace Nucleu {
@@ -64,7 +63,7 @@ namespace Nucleu {
 		{
 			if (m_Event.GetEventType() == T::GetStaticType())
 			{
-				m.Event.m_Handled = func(*(T*)&m_Event);
+				m_Event.m_Handled = func(*(T*)&m_Event);
 				return true;
 			}
 			return false;

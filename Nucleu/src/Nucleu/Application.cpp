@@ -1,3 +1,5 @@
+#include "ncpch.h"
+
 #include "Application.h"
 
 #include "Nucleu/Events/ApplicationEvent.h"
@@ -5,19 +7,21 @@
 
 namespace Nucleu {
 
-	Application::Application(){
-
+	Application::Application()
+	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	};
 
-	Application::~Application() {
+	Application::~Application()
+	{
 
 	};
 
 	void Application::Run()
 	{
-		WindwResizeEvent e(1280, 720);
-		NC_TRACE(e);
-
-		while (true);
+		while (m_Running)
+		{
+			m_Window->OnUpdate();
+		}
 	}
 }
